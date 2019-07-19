@@ -217,7 +217,7 @@
 								 <div class="col-md-6 col-sm-6 col-xs-12">
 								   <select class="form-control" name="asset_group"  >
 										{% for g in assetsBase.groupList %}
-											{% if g.id == assets.groupList %}
+											{% if g.id == assets.group %}
 												<option value="{{g.id}}" name="asset_group" selected="selected" >{{g.name|default:""}}</option>
 											{% else %}
 												<option value="{{g.id}}" name="asset_group">{{g.name|default:""}}</option>
